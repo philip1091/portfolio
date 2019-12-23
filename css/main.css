@@ -1,3 +1,201 @@
 body{
-  background-color: blue;
+  background-color: #000;
+  color: white;
 }
+
+
+.logo{
+
+  padding-top: 8px;
+  margin-left: 100px;
+}
+
+
+.logo-text{
+  color: white;
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+}
+
+.logo-text:hover{
+  color: white;
+  text-decoration: none;
+}
+
+
+.banner{
+  background-image: url(https://images.unsplash.com/photo-1562813733-b31f71025d54?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1949&q=80);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  height: 80vh;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 30px;
+}
+
+
+.content{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 11px;
+  padding-right: 108px;
+}
+
+.list{
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+}
+
+.list:hover{
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+}
+
+.cv{
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+}
+
+.cv:hover{
+  color: white;
+  text-decoration: none;
+}
+
+.resume-dropdown{
+  display: flex;
+  align-items: center;
+}
+
+.resume-dropdown .icon{
+  color: white;
+  margin-left: -13px;
+  visibility: hidden;
+}
+
+.resume-dropdown:hover .icon{
+  visibility: visible;
+}
+
+.title{
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: lighter;
+  margin: 1.5em;
+}
+
+.about-content{
+  max-width: 800px;
+  margin: auto;
+}
+
+.about-text{
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+.contact-content{
+  max-width: 500px;
+  margin: auto;
+}
+
+.submit{
+  border: 1px solid;
+  width: fit-content;
+  padding: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit:hover{
+  color: black;
+  background-color: white;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid;
+  margin-top: 60px;
+  align-items: center;
+}
+
+.links{
+  padding-top: 15px;
+}
+
+.copyright{
+  padding-top: 15px;
+  font-weight: lighter;
+  font-size: 0.8em;
+  opacity: 0.6;
+  margin: 20px;
+}
+
+.copyright:hover{
+  opacity: 1;
+}
+
+.icon{
+  padding: 0 4px;
+  color: white;
+  opacity: 0.6;
+}
+
+.icon:hover{
+  opacity: 1;
+}
+
+.work-info{
+  max-width: 500px;
+  margin: auto;
+}
+
+.img{
+  max-height: 40em;
+  object-fit: contain;
+}
+
+.work-description{
+  font-weight: lighter;
+  font-size: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.margin {
+  margin-top: 4.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
