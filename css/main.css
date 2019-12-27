@@ -3,7 +3,6 @@ body{
   color: white;
 }
 
-
 .logo{
 
   padding-top: 8px;
@@ -46,6 +45,33 @@ body{
   margin: 11px;
   padding-right: 108px;
 }
+
+.wagon{
+  color: red;
+  transition: background-color 0.5s ease;
+}
+
+.wagon-logo{
+  width: 20px;
+  /*visibility: hidden;*/
+  display: none;
+}
+
+.wagon:hover{
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 3px;
+  background-color: white;
+  color: red;
+  font-weight: bold;
+  padding: 6px;
+}
+
+.wagon:hover .wagon-logo{
+  /*visibility: visible;*/
+  display: inline;
+}
+
 
 .list{
   padding: 15px;
@@ -104,6 +130,7 @@ body{
 .about-text{
   font-weight: lighter;
   font-size: 20px;
+  text-align: center;
 }
 
 .contact-content{
@@ -179,23 +206,36 @@ body{
   margin-top: 4.5em;
 }
 
+.card-show{
+  display: flex;
+  justify-content: space-between;
+  max-width: 700px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.icon{
+  cursor: pointer;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 400px;
+  }
+}
 
 
