@@ -360,7 +360,7 @@ input:focus ~ .highlight {
   transition: 0.8s ease;
   opacity: .7;
   padding: 7px;
-  border-radius: 5px;
+  border: none;
 }
 
 .btn1:hover {
@@ -369,6 +369,7 @@ input:focus ~ .highlight {
   background-color: white;
   cursor: pointer;
   border: 1px solid #B1B1B1;
+  border-radius: 5px;
 }
 
 /*end*/
