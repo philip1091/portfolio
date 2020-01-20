@@ -393,19 +393,19 @@ input:focus ~ .highlight {
 /*end*/
 
 
-@media (max-width: 960px) {
+@media (min-width: 1025px) and (max-width: 1140px) {
   /* For a screen < 960px, this CSS will be read */
   .contain {
     width: 700px;
   }
 }
-@media (max-width: 720px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   /* For a screen < 720px, this CSS will be read */
   .contain {
     width: 500px;
   }
 }
-@media (max-width: 540px) {
+@media (min-width: 320px) and (max-width: 767px) {
   /* For a screen < 540px, this CSS will be read */
   .contain {
     width: 400px;
