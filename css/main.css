@@ -26,11 +26,12 @@ body{
 
 
 .banner{
-  background-image: url(https://images.unsplash.com/photo-1562813733-b31f71025d54?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1949&q=80);
+  background-image: url(../img/bcg-img.jpeg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 50%;
   height: 80vh;
+  margin-top: -30px;
 }
 
 .nav{
@@ -40,6 +41,9 @@ body{
   margin: 30px;
 }
 
+.nv-toggler{
+  display: none;
+}
 
 .content{
   list-style: none;
@@ -392,23 +396,113 @@ input:focus ~ .highlight {
 
 /*end*/
 
+@media (min-width : 320px) and (max-width : 767px){
+  .logo{
+    margin-left: 0px;
+  }
 
-@media (min-width: 1025px) and (max-width: 1140px) {
-  /* For a screen < 960px, this CSS will be read */
-  .contain {
-    width: 700px;
+  .nv-toggler{
+    display: initial;
+    padding: .25rem .75rem;
+    font-size: 1.05rem;
+    line-height: 1;
+    margin-top: 10px;
+    background-color: transparent;
+    border: none;
+  }
+
+  .content{
+    padding-right: 0;
+    float: right;
+    border: 1px solid transparent;
+    padding: 9px;
+    border-radius: 7px;
+    background-color: #000000b3;
+    margin-right: -19px;
+  }
+
+  .banner{
+    background-position: 56% 53%;
+    height: 90vh;
+  }
+
+  .banner-content{
+    margin-top: 32vh;
+  }
+
+  .ml13{
+    font-size: 1.0em;
+    letter-spacing: 0.1em;
+    font-weight: 300;
+  }
+
+  .icon-btn{
+     color:#fff;
+     font-size:28px;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* For a screen < 720px, this CSS will be read */
-  .contain {
-    width: 500px;
+
+
+@media (min-width : 768px) and (max-width : 1024px){
+  .logo{
+    margin-left: 0px;
   }
+
+  .content{
+    padding-right: 0;
+    float: right;
+    border: 1px solid transparent;
+    padding: 9px;
+    /*border-radius: 7px;
+    background-color: #000000b3;*/
+    margin-right: -19px;
+  }
+
+  .nv-toggler{
+    display: initial;
+    padding: .25rem .75rem;
+    font-size: 1.05rem;
+    line-height: 1;
+    margin-top: 10px;
+    background-color: transparent;
+    border: none;
+  }
+
+  .ml13{
+    font-size: 1.75em;
+    letter-spacing: 0.1em;
+    font-weight: 300;
+  }
+
+   .icon-btn{
+     color:#fff;
+     font-size:28px;
+  }
+
 }
-@media (min-width: 320px) and (max-width: 767px) {
-  /* For a screen < 540px, this CSS will be read */
-  .contain {
-    width: 400px;
+
+@media (min-width : 1024px) and (max-width : 1366px){
+
+    button:not(:disabled){
+      display: none;
+    }
+
+    .banner{
+      background-size: cover;
+    }
+
+    .content {
+      padding-right: 30px;
+      background-color: #00000000;
+    }
+
+    .logo{
+      margin-left: 40px;
+    }
+
+    .icon-btn{
+     color:#fff;
+     font-size:28px;
   }
 }
 
