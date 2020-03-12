@@ -41,6 +41,10 @@ body{
   margin: 30px;
 }
 
+.nav-link{
+  cursor: pointer;
+}
+
 .nv-toggler{
   display: none;
 }
