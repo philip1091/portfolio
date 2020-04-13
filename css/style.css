@@ -809,8 +809,22 @@ input:focus ~ .highlight {
     border: 1px solid transparent;
     padding: 9px;
     border-radius: 7px;
-    background-color: #000000b3;
+    /* background-color: #000000b3; */
     margin-right: -19px;
+  }
+
+  .dropdown-content a {
+    padding: 12px 0;
+    margin-right: 107px;
+    width: max-content;
+  }
+
+  .btn-custom {
+    margin-right: 26px;
+  }
+
+  .tab {
+    padding-right: 20px;
   }
 
   .banner{
@@ -826,6 +840,22 @@ input:focus ~ .highlight {
   .icon-btn{
      color:#fff;
      font-size:28px;
+  }
+
+  .container-text p {
+    font-size: smaller;
+  }
+
+  .name {
+    margin-top: 100px;
+  }
+
+  .nav {
+    margin: 30px 30px 0 30px;
+  }
+
+  .resizing-about {
+    padding-top: 5em;
   }
 
 
@@ -887,7 +917,7 @@ input:focus ~ .highlight {
 
     .content {
       padding-right: 30px;
-      background-color: #00000000;
+      /* background-color: #00000000; */
     }
 
     .logo{
