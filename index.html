@@ -11,7 +11,6 @@
       gtag('config', 'UA-155202006-1');
     </script>
     <meta name="google-site-verification" content="RKixVYCGceiQZbpyCiF1Iut68ZUoDFg93CPyowMt7PQ" />
-
   	<title>Philip's Portfolio</title>
     <link rel="icon" href="img/title-img.png">
     <meta charset="UTF-8">
@@ -23,188 +22,299 @@
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Roboto:300,400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0f628c6791.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" media="(min-width: 1025px) and (max-width: 1140px)" href="style.css">
     <link rel="stylesheet" type="text/css" media="(min-width: 768px) and (max-width: 1024px)" href="style.css">
     <link rel="stylesheet" type="text/css" media="(min-width: 320px) and (max-width: 767px)" href="style.css">
   </head>
 
   <body>
-    <!-- nav and banner section -->
 
-    <div class="banner">
-      <div class="nav navbar navbar-expand-lg">
-        <div class="logo">
-          <a href="http://www.philipdev.com/" target="_blank" class="logo-text">Philip's Portfolio</a>
-        </div>
+    <!-- <div id="loading"></div> -->
 
-        <button class="nv-toggler custom-toggler btn-custom" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon">
-          <i class="fas fa-bars icon-btn"></i>
-        </span>
-      </button>
-
-        <div class="tab collapse navbar-collapse" id="navbarResponsive">
-          <ul class="content navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="list nav-link about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="list nav-link projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="list nav-link contact">Contact me</a>
-            </li>
-            <li class="nav-item">
-              <div class="resume-dropdown">
-                <a class="cv nav-link resume">Resume</a>
-                <div class="dropdown show">
-                  <a class="icon dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="cv/cv.pdf">View</a>
-                   <!--  <a class="dropdown-item" href="#">Download</a> -->
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="banner-content">
-          <h1 class="ml13">Welcome to my portforlio website</h1>
-        </div>
-    </div>
-
-    <!-- About section -->
-
-    <div class="container">
-      <div class="title targetAbout">About</div>
-      <div class="about-content">
-        <p class="about-text">
-        I am a front-end web developer and Wechat mini-program developer based in Shanghai<br>
-        I just graduated from
-        <a class="wagon" href="certificate/certificate.pdf" target="_blank">
-          <img class="wagon-logo" src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" />
-        Le Wagon
-        </a> last December<br>
-        I have a diverse set of skills;
-        </p>
-      </div>
-      <div class="card-show">
-        <div class="icon">
-          <img src="img/html.png" width="58px" alt="rails image">
-        </div>
-        <div class="icon">
-          <img src="img/sass.png" width="55px" alt="rails image">
-        </div>
-        <div class="icon">
-          <img src="img/js.png" width="45px" alt="rails image">
-        </div>
-        <div class="icon">
-          <img src="img/react.png" width="55px" alt="rails image">
-        </div>
-        <div class="icon">
-          <img src="img/rails.png" width="65px" alt="rails image">
-        </div>
-      </div>
-    </div>
-
-    <!-- projects section -->
-    <div class="container">
-      <div class="title">Projects</div>
-      <div class="work">
-        <div class="container my-4">
-
-            <p class="work-description">I have worked on several projects both web apps and wechat mini-programs, these are my top three favorite projects that I have worked on to date. Please get in touch to see my full list of projects</p>
-
-            <hr class="mt-3">
-
-            <!--Carousel Wrapper-->
-            <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails work-info" data-ride="carousel">
-              <!--Slides-->
-              <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                  <img class="d-block w-100 img" src="gif/final.gif" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100 img" src="gif/rent.gif" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100 img" src="gif/cocktail.gif" alt="Third slide">
-                </div>
-              </div>
-              <!--/.Slides-->
-              <!--Controls-->
-              <a class="carousel-control-prev" href="#carousel-thumb" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carousel-thumb" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-              <!--/.Controls-->
-              <ol class="carousel-indicators">
-                <li data-target="#carousel-thumb" data-slide-to="0" class="active"> <img class="d-block w-100 img" src="gif/final.gif"
-                    class="img-fluid"></li>
-                <li data-target="#carousel-thumb" data-slide-to="1"><img class="d-block w-100 img" src="gif/rent.gif"
-                    class="img-fluid"></li>
-                <li data-target="#carousel-thumb" data-slide-to="2"><img class="d-block w-100 img" src="gif/cocktail.gif"
-                    class="img-fluid"></li>
-              </ol>
+    <!-- <div class="load"> -->
+      <!-- nav and banner section -->
+      <div id="animation-banner">
+        <div class="banner full-height">
+          <!-- ***** -->
+          <div class="nav navbar navbar-expand-lg">
+            <div class="logo">
+              <a href="http://www.philipdev.com/" target="_blank" class="logo-text">P</a>
             </div>
-            <!--/.Carousel Wrapper-->
-        </div>
-      </div>
 
-    <!-- contact me section -->
+            <button class="nv-toggler custom-toggler btn-custom" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon">
+                <i class="fas fa-bars icon-btn"></i>
+              </span>
+            </button>
 
-      <div class="container contact">
-        <div class="panel">
-          <div class="panel-content">
-            <form action="https://formspree.io/mdoabklq"
-  method="POST" class="form">
-              <div class="title">Contact Me</div>
-              <div class="group">
-                <input class="text" name="message" type="text" required>
-                <span class="highlight"></span>
-                <label class="label">Your name</label>
-              </div>
-              <div class="group">
-                <input class="text" name="_replyto" type="text" required>
-                <span class="highlight"></span>
-                <label class="label">Your email</label>
-              </div>
-              <div class="group">
-                <input class="text" name="message" type="text" required>
-                <span class="highlight"></span>
-                <label class="label">Type a message/comment</label>
-              </div>
-
-              <button href="#" type="submit" target="_blank" class="btn1">Submit</button>
-            </form>
+            <div class="tab collapse navbar-collapse" id="navbarResponsive">
+              <ul class="content navbar-nav ml-auto">
+                <li class="nav-item mr-4">
+                  <a href="#about-section" class="list nav-link about">About</a>
+                </li>
+                <li class="nav-item mr-4">
+                  <a href="#project-section" class="list nav-link projects">Projects</a>
+                </li>
+                <li class="nav-item mr-4">
+                  <a href="#contact-section" class="list nav-link contact">Contact me</a>
+                </li>
+                <li class="nav-item">
+                  <div class="resume-dropdown">
+                    <a class="list cv nav-link resume">Resume</a>
+                    <div class="dropdown-content">
+                      <a href="cv/Philippe-resume.pdf" target="_blank" >View Resume</a>
+                      <a href="cv/Philippe-resume.pdf" download>Download Resume</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="container-text">
+            <div data-aos="zoom-in-left" data-aos-easing="linear" data-aos-duration="1000" class="name">
+              <p>Hello, <span class="jp">I'm Jean Philippe.</span> <br></p>
+            </div>
+            <div data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1000" class="fed">
+              <p>I am a Front-end Web developer</p>
+            </div>
+            <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="1000" class="welcoming">
+              <p>Welcome to my Portfolio Website</p>
+            </div>
+          </div>
+          <div class="scroll-down-btn">
+            <a href="#about-section"><span></span><span></span><span></span></a>
           </div>
         </div>
       </div>
 
-    <!-- footer section -->
+      <!-- About section -->
 
-    <div class="container">
-      <div class="footer">
-        <div class="links">
-          <a href="https://github.com/philip1091" target="_blank"><i class="fab fa-github icon"></i></a>
-          <a href="https://www.linkedin.com/in/philip1091/" target="_blank"><i class="fab fa-linkedin icon"></i></a>
-          <a href="mailto:jeanphilh@outlook.com?Subject=Hello%20again" target="_top"><i class="fas fa-envelope icon"></i></a>
-
+      <div id="about-section" class="full-height bgcolor-about">
+        <div data-aos="fade-up" data-aos-anchor-placement="top-center">
+          <div class="resizing-about">
+            <div class="title targetAbout">About</div>
+            <div class="my-image">
+              <img src="img/me.jpeg" alt="">
+            </div>
+            <div class="about-content">
+              <p class="about-text">
+                I am a front-end web developer and Wechat mini-program developer based in Shanghai.<br>
+                I graduated from
+                <a class="wagon" href="certificate/certificate.pdf" target="_blank">
+                  <img class="wagon-logo" src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" />
+                  Le Wagon
+                </a> in December 2019.
+                I have serious passion for UI effects,<br> animation and creating intuiting, dynamic user experience.<a class="work-link" href="#contact-section">
+                  Let's work together and make some cool project.
+                </a>
+              </p>
+            </div>
+            <div class="card-show">
+              <div class="icon">
+                <img src="img/html.png" width="58px" alt="rails image">
+                <br> <span class="percentage">90%</span>
+              </div>
+              <div class="icon">
+                <img src="img/sass.png" width="55px" alt="rails image">
+                <br> <span class="percentage">70%</span>
+              </div>
+              <div class="icon">
+                <img src="img/js.png" width="45px" alt="rails image">
+                <br> <span class="percentage">80%</span>
+              </div>
+              <div class="icon">
+                <img src="img/react.png" width="55px" alt="rails image">
+                <br> <span class="percentage">50%</span>
+              </div>
+              <div class="icon">
+                <img src="img/rails.png" width="65px" alt="rails image">
+                <br> <span class="percentage">70%</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="copyright">
-        &copy; Jean Philippe Hicintuka 2019
       </div>
+
+      <!-- projects section -->
+      <div id="project-section" class="full-height bgcolor-projects">
+        <div data-aos="fade-up" data-aos-anchor-placement="top-center">
+          <div class="resizing-projects" >
+            <div class="title">Projects</div>
+            <div class="work">
+              <div class="container my-4">
+
+                <p class="work-description">Here is some of my work, i have worked on Web app, Wechat Mini-program and Simple logic gaming which you can check out and play. Check it bellow.</p>
+
+                <hr class="mt-3">
+                <div class="category">
+                  <ul>
+                    <li class="all active-bg">All</li>
+                    <li class="wechatMp ">Wechat MP</li>
+                    <li class="webApp">Web APP</li>
+                    <li class="games">Games</li>
+                  </ul>
+                </div>
+
+                <!--Carousel Wrapper-->
+                <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails work-info" data-ride="carousel">
+                  <!--Slides-->
+                  <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100 img" src="gif/final.gif" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100 img" src="gif/rent.gif" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100 img" src="gif/cocktail.gif" alt="Third slide">
+                    </div>
+                  </div>
+                  <!--/.Slides-->
+                  <!--Controls-->
+                  <a class="carousel-control-prev" href="#carousel-thumb" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carousel-thumb" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                  <!--/.Controls-->
+                  <ol class="carousel-indicators">
+                    <li data-target="#carousel-thumb" data-slide-to="0" class="active"> <img class="d-block w-100 img" src="gif/final.gif"
+                      class="img-fluid"></li>
+                    <li data-target="#carousel-thumb" data-slide-to="1"><img class="d-block w-100 img" src="gif/rent.gif"
+                      class="img-fluid"></li>
+                    <li data-target="#carousel-thumb" data-slide-to="2"><img class="d-block w-100 img" src="gif/cocktail.gif"
+                        class="img-fluid"></li>
+                  </ol>
+                </div>
+                      <!--/.Carousel Wrapper-->
+                <div class="wechat-display d-none">
+                  <div class="boxes">
+                    <div class="box wechat1"></div>
+                    <div class="box wechat2"></div>
+                  </div>
+                </div>
+                <div class="web-display d-none">
+                  <div class="boxes">
+                    <div class="box cocktail-site">
+                    </div>
+                  </div>
+                  <div class="link-to">
+                    <a class="w-page" target="_blank" href="https://shake-cocktail.herokuapp.com/">Go to Website</a>
+                  </div>
+                </div>
+                <div class="gaming d-none">
+                  <div class="boxes">
+                    <div class="box tic-tac-game">
+                    </div>
+                  </div>
+                  <div class="link-to">
+                    <a class="w-page" target="_blank" href="xo/xo.html">Play game</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
+      <!-- contact me section -->
+
+      <div id="contact-section" class="contact full-height bgcolor-contact">
+        <div data-aos="fade-up" data-aos-anchor-placement="top-center">
+          <div class="resizing-about">
+            <div class="panel">
+              <div class="panel-content">
+                <form action="https://formspree.io/mdoabklq" method="POST" class="form">
+                  <div class="title">Contact Me</div>
+                  <div class="group">
+                    <input class="text" name="message" type="text" required>
+                    <span class="highlight"></span>
+                    <label class="label">Your name</label>
+                  </div>
+                  <div class="group">
+                    <input class="text" name="_replyto" type="text" required>
+                    <span class="highlight"></span>
+                    <label class="label">Your email</label>
+                  </div>
+                  <div class="group">
+                    <input class="text" name="message" type="text" required>
+                    <span class="highlight"></span>
+                    <label class="label">Type a message/comment</label>
+                  </div>
+
+                  <button href="#" type="submit" target="_blank" class="btn1">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer section -->
+
+      <div class="bgcolor-contact">
+        <div class="footer">
+          <div class="links">
+            <a href="https://github.com/philip1091" target="_blank"><i class="fab fa-github icon"></i></a>
+            <a href="https://www.linkedin.com/in/philip1091/" target="_blank"><i class="fab fa-linkedin icon"></i></a>
+            <a href="mailto:jeanphilh@outlook.com?Subject=Hello%20again" target="_top"><i class="fas fa-envelope icon"></i></a>
+
+          </div>
+          <div class="copyright">
+            &copy; Jean Philippe Hicintuka 2019 <br>
+            Version 2.0
+          </div>
+        </div>
+      </div>
+
+    <!-- </div> -->
+
+
+    <!-- back to top button -->
+    <div class="progress-wrap">
+      <svg class="progress-circle " width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d = "M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+      </svg>
+      <!-- <i class="fas fa-arrow-up arrow"></i> -->
+      <img src="img/arrow-up.png"  class="arrow" alt="">
+    </div>
+
     <script src="lib/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript">
+    AOS.init({
+      duration: 1200,
+      easing: 'ease'
+    });
+
+    </script>
+    <script src="lib/three.r95.min.js"></script>
+    <script src="lib/vanta.net.min.js"></script>
+    <script>
+    VANTA.NET({
+      el: "#animation-banner",
+      mouseControls: true,
+      touchControls: true,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0xbad2bf,
+      backgroundColor: 0x336461,
+      points: 6.00,
+      maxDistance: 17.00,
+      spacing: 17.00
+    })
+    </script>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -213,5 +323,3 @@
   </body>
 
 </html>
-
-
