@@ -32,7 +32,7 @@ body{
   margin: 0;
 } */
 
-.logo{
+.logo-main{
   padding-top: 8px;
   margin-left: 100px;
 }
@@ -129,6 +129,11 @@ body{
 .resizing-about {
   padding-top: 9em;
 }
+
+.resizing-contact {
+  padding-top: 9em;
+}
+
 .bgcolor-about{
   background-color: #A2A77F;
 }
@@ -389,6 +394,7 @@ body{
 
 .list{
   padding: 15px;
+  padding-right: 12px;
   color: white;
   text-decoration: none;
   font-family: 'Muli', sans-serif;
@@ -779,13 +785,22 @@ input:focus ~ .highlight {
 /* ************************************* */
 
 /*end*/
+@media (min-width : 375px) and (max-width : 812px){
+  .copyright {
+    margin: 0 20px 78px 20px;
+  }
+
+  .links {
+    margin: 0 20px 78px 20px;
+  }
+}
 
 @media (min-width : 320px) and (max-width : 767px){
   /* .full-height{
     height: inherit;
   } */
 
-  .logo{
+  .logo-main{
     margin-left: 0px;
   }
 
@@ -855,9 +870,59 @@ input:focus ~ .highlight {
   }
 
   .resizing-about {
-    padding-top: 5em;
+    padding-top: 1em;
   }
 
+  .category {
+    width: auto;
+  }
+
+  .category ul {
+    padding-left: 0;
+    margin: 0 1em;
+  }
+
+  .category li {
+    margin-right: 35px;
+    text-align: center;
+  }
+
+  .box{
+    padding: 0 5em;
+  }
+
+  .group .text {
+    width: 300px;
+  }
+
+  .resizing-contact{
+    padding-top: 13em;
+  }
+
+  .resizing-projects{
+    padding-top: .1em;
+  }
+
+  .footer {
+    margin: 0 7px;
+    text-align: center;
+  }
+
+  .progress-wrap.active-progress{
+    display: none;
+  }
+
+  .copyright {
+    margin: 0 20px 20px 20px;
+  }
+
+  .links {
+    margin: 0 20px 20px 20px;
+  }
+
+  .link-to {
+    margin-top: -20px;
+  }
 
 }
 
@@ -867,7 +932,11 @@ input:focus ~ .highlight {
     height: inherit;
   } */
 
-  .logo{
+  .btn-custom {
+    margin-right: 26px;
+  }
+
+  .logo-main{
     margin-left: 0px;
   }
 
@@ -900,6 +969,22 @@ input:focus ~ .highlight {
      font-size:28px;
   }
 
+  .resizing-about{
+    padding-top: 15em;
+  }
+
+  .resizing-contact{
+    padding-top: 15em;
+  }
+
+  .copyright {
+    margin: 0 20px 100px 20px;
+  }
+
+  .links {
+    margin: 0 20px 100px 20px;
+  }
+
 }
 
 @media (min-width : 1024px) and (max-width : 1366px){
@@ -920,12 +1005,20 @@ input:focus ~ .highlight {
       /* background-color: #00000000; */
     }
 
-    .logo{
+    .logo-main{
       margin-left: 40px;
     }
 
     .icon-btn{
      color:#fff;
      font-size:28px;
+  }
+
+  .copyright {
+    margin: 0 20px 80px 20px;
+  }
+
+  .links {
+    margin: 0 20px 80px 20px;
   }
 }
